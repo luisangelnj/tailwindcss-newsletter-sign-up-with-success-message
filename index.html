@@ -28,7 +28,7 @@
       <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" class="md:mx-auto h-full py-5">
     </div>
 
-    <div class="flex flex-col justify-between space-y-8 text-left md:basis-1/2 md:px-12">
+    <div class="flex flex-col justify-between space-y-5 text-left md:basis-1/2 md:px-12">
       <div class="px-5 space-y-5 md:space-y-4">
         <div class="text-3xl md:text-4xl font-bold">
           Stay updated!
@@ -45,33 +45,17 @@
         </div>
       </div>
       <div class="flex flex-col w-full space-y-4 py-4 px-5 md:py-3">
-        <div class="text-start font-bold text-xs">
-          Email address
-        </div>
-        <input type="text" placeholder="email@company.com" class="block border border-gray-400 rounded-lg p-3">
-        <button class="block bg-gray-700 p-3 text-white font-bold rounded-lg">Subscribe to monthly newsletter</button>
+        <form action="./success.html" method="get" class="w-full">
+          <label for="email" class="block text-start font-bold text-xs my-4 md:my-3 bg-white w-full">
+            Email address
+          </label>
+          <input type="email" name="email" placeholder="email@company.com" class="block w-full border my-4 md:my-3 border-gray-400 rounded-lg p-3 focus:outline-none focus:invalid:border-red-600 invalid:text-red-600 invalid:border-red-600" required>
+          <button class="block w-full bg-gray-700 p-3 text-white font-bold rounded-lg">Subscribe to monthly newsletter</button>
+        </form>
       </div>
     </div>
 
   </div>
 
-
-  <!-- Sign-up form end
-
-  Success message start
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  Success message end
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
 </body>
 </html>
